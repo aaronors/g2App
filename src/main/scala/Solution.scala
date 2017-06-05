@@ -28,7 +28,7 @@ object Solution {
     /**----------------- Assets -----------------**/
 
    /** open assets.txt file **/
-    val assetsFile = sc.textFile("C:\\Users\\aaronors\\IdeaProjects\\g2App\\src\\main\\resources\\assets.txt") /** returns an RDD string **/
+    val assetsFile = sc.textFile("C:\\Users\\aaronors\\IdeaProjects\\g2App\\src\\main\\resources\\assets.txt")
 
     /** parse to RDD[string] of JSON lines **/
     val assetsStr = assetsFile.map(line => parseLine(line))
@@ -48,7 +48,7 @@ object Solution {
     /**----------------- Ad Events -----------------**/
 
 
-    val adeventFile = sc.textFile("C:\\Users\\aaronors\\IdeaProjects\\g2App\\src\\main\\resources\\ad_events.txt") /** returns an RDD string **/
+    val adeventFile = sc.textFile("C:\\Users\\aaronors\\IdeaProjects\\g2App\\src\\main\\resources\\ad_events.txt")
 
     val adeventStr = adeventFile.map(line => parseLine(line))
 
